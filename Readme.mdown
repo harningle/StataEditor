@@ -1,10 +1,12 @@
 Stata Editor for Sublime Text 3
 ===============================
 
-by [Mattias Nordin](http://mattiasnordin.com)
+Original work by [Mattias Nordin](http://mattiasnordin.com)
+Inspired by [Sergio Correia](http://scorreia.com/)
 
-* Version 0.11.0
-* Date: December 3, 2020
+
+* Version 1.00.0
+* Date: May 5, 2022
 
 Features
 --------
