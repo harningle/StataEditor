@@ -2,7 +2,10 @@ Stata Editor for Sublime Text 3
 ===============================
 
 Original work by [Mattias Nordin](http://mattiasnordin.com)
+
 Inspired by [Sergio Correia](http://scorreia.com/)
+
+Fork by harningle
 
 
 * Version 1.00.0
