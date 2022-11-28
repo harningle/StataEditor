@@ -118,6 +118,24 @@
 			<key>name</key>
 			<string>constant.numeric.stata</string>
 		</dict>
+		<dict>
+			<key>match</key>
+			<string>^\*-{78}\*\n\*-{7}\s+-{7}\*\n\*-{7}\s+?(\w.+?)\s?-{7}\*\n\*-{7}\s+-{7}\*\n\*-{78}\*</string>
+			<key>name</key>
+			<string>section.stata</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>^\*-{78}\*\n\*\s{1}(.*)\s?\*\n\*-{78}\*</string>
+			<key>name</key>
+			<string>subsection.stata</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>^/\*\s{1}(.+?)\s\*+/</string>
+			<key>name</key>
+			<string>subsubsection.stata</string>
+		</dict>
 	</array>
 	<key>scopeName</key>
 	<string>source.stata</string>
