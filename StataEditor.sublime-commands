@@ -54,14 +54,6 @@
         "command": "stata_local"
     },
     {
-        "caption": "Stata: Help (external)",
-        "command": "stata_help_external"
-    },
-    {
-        "caption": "Stata: Help (internal)",
-        "command": "stata_help_internal"
-    },
-    {
         "caption": "Stata: Load Stata dataset",
         "command": "stata_load"
     }
