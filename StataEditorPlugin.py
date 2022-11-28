@@ -164,15 +164,6 @@ class StataExecuteCommand(sublime_plugin.TextCommand):
 
 		StataAutomate(str(args["Mode"]) + ' "' + dofile_path +'"')
 
-class StataHelpExternal(sublime_plugin.TextCommand):
-	def run(self,edit):
-		self.view.run_command("expand_selection", {"to": "word"})
-		sel = self.view.sel()[0]
-		help_word = self.view.substr(sel)
-		help_command = "help " + help_word
-
-		StataAutomate(help_command)
-
 class StataLocal(sublime_plugin.TextCommand):
 	def run(self,edit):
 		sels = self.view.sel()
