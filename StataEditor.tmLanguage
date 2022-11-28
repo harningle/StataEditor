@@ -120,7 +120,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>^\*-{78}\*\n\*-{7}\s+-{7}\*\n\*-{7}\s+?(\w.+?)\s?-{7}\*\n\*-{7}\s+-{7}\*\n\*-{78}\*</string>
+			<string>^\*-{7}\s+?(\w.+?)\s?-{7}\*</string>
 			<key>name</key>
 			<string>section.stata</string>
 		</dict>
