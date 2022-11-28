@@ -132,7 +132,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>^/\*\s{1}(.+?)\s\*+/</string>
+			<string>^/\*\s{1}.+?\s\*+/</string>
 			<key>name</key>
 			<string>subsubsection.stata</string>
 		</dict>
