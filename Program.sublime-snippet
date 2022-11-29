@@ -1,10 +1,8 @@
 <snippet>
 	<content><![CDATA[
-capture program drop ${1:Name}
-program define ${1:Name}
-
-	$0
-
+cap prog drop ${1:Name}
+prog define ${1:Name}
+    $0
 end
 ]]></content>
 	<tabTrigger>prog</tabTrigger>
