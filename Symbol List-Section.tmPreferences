@@ -5,7 +5,7 @@
 	<key>name</key>
 	<string>Symbol List</string>
 	<key>scope</key>
-	<string>source.stata section.stata</string>
+	<string>source.stata comment.line.stata</string>
 	<key>settings</key>
 	<dict>
 		<key>showInIndexedSymbolList</key>
@@ -13,7 +13,7 @@
 		<key>showInSymbolList</key>
 		<integer>1</integer>
 		<key>symbolTransformation</key>
-		<string>s/^\*-{7}\s+?(\w.+?)\s?-{7}\*/Section: $1/</string>
+		<string>s/^\*-{7}\s+?(\w.+?)\s?-{7}\*/$1/</string>
 	</dict>
 </dict>
 </plist>
