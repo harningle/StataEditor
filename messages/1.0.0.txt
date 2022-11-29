@@ -1,0 +1,3 @@
+Changes in version 1.0.0:
+
+	*Include section in symbol list
