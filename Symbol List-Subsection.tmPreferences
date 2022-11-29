@@ -5,7 +5,7 @@
 	<key>name</key>
 	<string>Symbol List</string>
 	<key>scope</key>
-	<string>source.stata comment.line.stata</string>
+	<string>source.stata comment.line.subsection.stata</string>
 	<key>settings</key>
 	<dict>
 		<key>showInIndexedSymbolList</key>
@@ -13,7 +13,7 @@
 		<key>showInSymbolList</key>
 		<integer>1</integer>
 		<key>symbolTransformation</key>
-		<string>s/^\*[ ]+(.+)[ ]+\*/    $1/</string>
+		<string>s/^\* (.+?)[ ]+\*/    $1/</string>
 	</dict>
 </dict>
 </plist>
