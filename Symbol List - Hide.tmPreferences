@@ -4,7 +4,8 @@
         <key>scope</key>
         <string>
                 source.stata comment.line.stata,
-                source.stata comment.block.stata
+                source.stata comment.block.stata,
+                source.stata entity.name.function.stata
         </string>
         <key>settings</key>
         <dict>
