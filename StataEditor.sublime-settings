@@ -10,12 +10,12 @@
 	this path must correspond to where your Stata distribution is installed. To change the path, go to
 	Preferences -> Package Settings -> StataEditor -> Settings - User, copy this line of code, change the path and save. */
 
-	"stata_path": "C:/Program Files (x86)/Stata13/StataMP-64.exe",
+	"stata_path": "C:/Program Files/Stata17/StataMP-64.exe",
 
 	/* Current Stata version. This makes sure Sublime Text is sending code with the correct encoding to Stata.
 	Windows-1252 is used for Stata 13 and earlier, while utf-8 is used for Stata 14. */
 
-	"stata_version": 13,
+	"stata_version": 17,
 
 	/* This setting is only for versions 13 and older. Change to appropriate encoding if needed.
 	For example, if you use a Chinese version of Stata, change encoding to "gbk". */
@@ -52,7 +52,7 @@
 	file extensions you wish to be enabled separated by commas. Example:
 	"file_completions": "dta, do, ado" */
 
-	"file_completions": false,
+	"file_completions": true,
 
 	/* This setting is the waiting time in seconds from that Stata is launched until
 	the commands are being sent. With zero waiting time, Stata may be launced twice.
