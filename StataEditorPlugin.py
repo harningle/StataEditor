@@ -25,8 +25,11 @@ def find_files(file_ext):
     """ Create list of all files in project folders with given file extension """
     project_folders = []
     project_data = sublime.active_window().project_data()
-    for i in range(0,len(project_data['folders'])):
-        project_folders.append(project_data['folders'][i]['path'])
+    if project_data:
+        for i in range(0,len(project_data['folders'])):
+            project_folders.append(project_data['folders'][i]['path'])
+    else:
+        project_folders = ['.']
     start_time = time.time()
     for new_path in project_folders:
         for root, dirs, files in os.walk(new_path):
@@ -34,7 +37,7 @@ def find_files(file_ext):
                 if file.endswith(file_ext):
                     relDir = os.path.relpath(root, new_path)
                     relFile = os.path.join(relDir, file)
-                    sublime.file_list.append(relFile)
+                    sublime.file_list.append(relFile.replace('\\', '/'))
                 diff_time = time.time() - start_time
                 # With huge folders, the loop can take a long time and freeze ST.
                 # This condition tries to limit this problem by
