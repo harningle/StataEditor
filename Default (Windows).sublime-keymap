@@ -4,61 +4,6 @@
 			{ "key": "selector", "operator": "equal", "operand": "source.stata" }
 		]
 	},
-	{ "keys": ["alt+d"],	"command": "stata_execute",	"args": {"Mode": "do", "Selection": "line"},	"context":
-		[
-			{ "key": "selector", "operator": "equal", "operand": "source.stata" }
-		]
-	},
-	{ "keys": ["ctrl+alt+d"],	"command": "stata_execute",	"args": {"Mode": "do", "Selection": "selection_only"},	"context":
-		[
-			{ "key": "selector", "operator": "equal", "operand": "source.stata" }
-		]
-	},
-	{ "keys": ["alt+shift+d"],	"command": "stata_execute",	"args": {"Mode": "do", "Selection": "rest_of_file"},	"context":
-		[
-			{ "key": "selector", "operator": "equal", "operand": "source.stata" }
-		]
-	},
-	{ "keys": ["ctrl+alt+a"],	"command": "stata_execute",	"args": {"Mode": "do", "Selection": "run_above"},	"context":
-		[
-			{ "key": "selector", "operator": "equal", "operand": "source.stata" }
-		]
-	},
-	{ "keys": ["ctrl+r"], "command": "stata_execute", "args": {"Mode": "run", "Selection": "default"}, "context":
-		[
-			{ "key": "selector", "operator": "equal", "operand": "source.stata" }
-		]
-	},
-	{ "keys": ["alt+r"],	"command": "stata_execute",	"args": {"Mode": "run", "Selection": "line"},	"context":
-		[
-			{ "key": "selector", "operator": "equal", "operand": "source.stata" }
-		]
-	},
-	{ "keys": ["ctrl+alt+r"],	"command": "stata_execute",	"args": {"Mode": "run", "Selection": "selection_only"},	"context":
-		[
-			{ "key": "selector", "operator": "equal", "operand": "source.stata" }
-		]
-	},
-	{ "keys": ["alt+shift+r"],	"command": "stata_execute",	"args": {"Mode": "run", "Selection": "rest_of_file"},	"context":
-		[
-			{ "key": "selector", "operator": "equal", "operand": "source.stata" }
-		]
-	},
-	{ "keys": ["alt+l"], "command": "stata_local", "context":
-		[
-			{ "key": "selector", "operator": "equal", "operand": "source.stata" }
-		]
-	},
-	{ "keys": ["f1"], "command": "stata_help_internal", "context":
-		[
-			{ "key": "selector", "operator": "equal", "operand": "source.stata" }
-		]
-	},
-	{ "keys": ["ctrl+f1"], "command": "stata_help_external", "context":
-		[
-			{ "key": "selector", "operator": "equal", "operand": "source.stata" }
-		]
-	},
 	{ "keys": ["alt+shift+u"], "command": "stata_load", "context":
 		[
 			{ "key": "selector", "operator": "equal", "operand": "source.stata" }
