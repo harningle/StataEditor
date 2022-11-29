@@ -13,7 +13,6 @@ import os
 
 settings_file = "StataEditor.sublime-settings"
 
-
 # def is_running(process):
 #     """ Check if process is running """
 #     wmi = win32com.client.GetObject('winmgmts:')
@@ -21,7 +20,6 @@ settings_file = "StataEditor.sublime-settings"
 #         if re.search(process, p.Name):
 #             return True
 #     return False
-
 
 def find_files(file_ext):
     """ Create list of all files in project folders with given file extension """
@@ -36,7 +34,7 @@ def find_files(file_ext):
                 if file.endswith(file_ext):
                     relDir = os.path.relpath(root, new_path)
                     relFile = os.path.join(relDir, file)
-                    sublime.file_list.append(relFile.replace('\\', '/'))
+                    sublime.file_list.append(relFile)
                 diff_time = time.time() - start_time
                 # With huge folders, the loop can take a long time and freeze ST.
                 # This condition tries to limit this problem by
@@ -45,7 +43,6 @@ def find_files(file_ext):
                 # could still lead to memory leaks.
                 if diff_time > 1:
                     return
-
 
 def temp_file_exists():
     """ Check a given temp file exists """
@@ -56,14 +53,14 @@ def temp_file_exists():
             return True, tmp_dta
     return False, tmp_dta
 
-
 def plugin_loaded():
     global settings
     settings = sublime.load_settings(settings_file)
 
-	
 def StataAutomate(stata_command):
     """ Launch Stata (if needed) and send commands """
+    # Switch to the proj. dir. Otherwise, we need to create a proj. in ST3
+    os.chdir(getDirectory().replace('"', ''))
     try:
         sublime.stata.DoCommandAsync(stata_command)
 
@@ -81,7 +78,6 @@ def StataAutomate(stata_command):
             for file_ext in settings.get("file_completions").split(","):
                 find_files("." + file_ext.strip())
 
-		
 def getDirectory():
     var_dict = sublime.active_window().extract_variables()
     if settings.get("default_path") == "current_path":
@@ -104,7 +100,6 @@ def getDirectory():
         set_dir = settings.get("default_path")
         set_dir = "\"" + set_dir + "\""
     return set_dir
-
 
 def SelectCode(self,selection):
     all_text = ""
@@ -154,7 +149,6 @@ def SelectCode(self,selection):
 
     return all_text
     
-
 class StataExecuteCommand(sublime_plugin.TextCommand):
     def run(self, edit, **args):
         all_text = SelectCode(self,args["Selection"])
@@ -172,7 +166,44 @@ class StataExecuteCommand(sublime_plugin.TextCommand):
 
         StataAutomate(str(args["Mode"]) + ' "' + dofile_path +'"')
 
-	
+class StataHelpExternal(sublime_plugin.TextCommand):
+    def run(self,edit):
+        self.view.run_command("expand_selection", {"to": "word"})
+        sel = self.view.sel()[0]
+        help_word = self.view.substr(sel)
+        help_command = "help " + help_word
+
+        StataAutomate(help_command)
+
+class StataHelpInternal(sublime_plugin.TextCommand):
+    def run(self,edit):
+        self.view.run_command("expand_selection", {"to": "word"})
+        sel = self.view.sel()[0]
+        help_word = self.view.substr(sel)
+        help_word = re.sub(" ","_",help_word)
+
+        help_adress = "http://www.stata.com/help.cgi?" + help_word
+        helpfile_path = os.path.join(tempfile.gettempdir(), 'st_stata_help.txt')
+
+        try:
+            a = urllib.request.urlopen(help_adress)
+            source_code = a.read().decode("utf-8")
+            a.close()
+
+            regex_pattern = re.findall("<!-- END HEAD -->\n(.*?)<!-- BEGIN FOOT -->", source_code, re.DOTALL)
+            help_content = re.sub("<h2>|</h2>|<pre>|</pre>|<p>|</p>|<b>|</b>|<a .*?>|</a>|<u>|</u>|<i>|</i>","",regex_pattern[0])
+            help_content = re.sub("&gt;",">",help_content)
+            help_content = re.sub("&lt;",">",help_content)
+
+            with open(helpfile_path, 'w') as f:
+                f.write(help_content)
+
+            self.window = sublime.active_window()
+            self.window.open_file(helpfile_path)
+        
+        except:
+            print("Could not retrieve help file")
+
 class StataLocal(sublime_plugin.TextCommand):
     def run(self,edit):
         sels = self.view.sel()
@@ -185,8 +216,38 @@ class StataLocal(sublime_plugin.TextCommand):
             word_str = "`"+word_str+"'"
             self.view.replace(edit,word_sel,word_str)
 
-	
 class StataLoad(sublime_plugin.TextCommand):
     def run(self,edit):
         sel = self.view.substr(self.view.sel()[0])
         StataAutomate("use " + sel + ", clear")
+
+class StataForceClose(sublime_plugin.EventListener):
+    """ Force Stata to close when Sublime Text closes """
+    def on_close(self,view):
+        # Check if there exists an open Sublime Text window
+        if len(sublime.windows()) == 0:
+            # Check if an active Stata session has been launched from Sublime Text
+            try:
+                print(sublime.stata)
+                # If there is no emergency backup, prompt message and save backup, then delete the Stata session.
+                if temp_file_exists()[0] == False:
+                    sublime.message_dialog("Stata is about to close. Restart\nSublime Text to restore the session.")
+                    sublime.stata.DoCommand("save " + temp_file_exists()[1] + ", replace")
+                    del sublime.stata
+            except:
+                pass
+
+class StataRestore(sublime_plugin.EventListener):
+    def on_text_command(self, view, name, args):
+        # Check if an emergency backup file exists
+        if temp_file_exists()[0] == True:
+            rest = sublime.ok_cancel_dialog("Stata was forced to shut down as Sublime Text closed. Would you like to restore your previous session?")
+            tmp_dta = temp_file_exists()[1]
+            if rest == True:
+                win32api.WinExec(settings.get("stata_path"))
+                sublime.stata = win32com.client.Dispatch("stata.StataOLEApp")
+                sublime.stata.DoCommand("cd " + getDirectory())
+                sublime.stata.DoCommand('use ' + tmp_dta + ', clear')
+                os.remove(tmp_dta)
+            else:
+                os.remove(tmp_dta)
