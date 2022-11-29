@@ -3,7 +3,8 @@
 <dict>
         <key>scope</key>
         <string>
-                source.stata comment.line.stata
+                source.stata comment.line.stata,
+                source.stata comment.block.stata
         </string>
         <key>settings</key>
         <dict>
