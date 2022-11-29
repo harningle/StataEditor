@@ -5,7 +5,7 @@
 	<key>name</key>
 	<string>Symbol List</string>
 	<key>scope</key>
-	<string>source.stata subsubsection.stata</string>
+	<string>source.stata comment.block.stata</string>
 	<key>settings</key>
 	<dict>
 		<key>showInIndexedSymbolList</key>
