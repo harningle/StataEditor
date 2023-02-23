@@ -169,44 +169,6 @@ class StataExecuteCommand(sublime_plugin.TextCommand):
 
         StataAutomate(str(args["Mode"]) + ' "' + dofile_path +'"')
 
-class StataHelpExternal(sublime_plugin.TextCommand):
-    def run(self,edit):
-        self.view.run_command("expand_selection", {"to": "word"})
-        sel = self.view.sel()[0]
-        help_word = self.view.substr(sel)
-        help_command = "help " + help_word
-
-        StataAutomate(help_command)
-
-class StataHelpInternal(sublime_plugin.TextCommand):
-    def run(self,edit):
-        self.view.run_command("expand_selection", {"to": "word"})
-        sel = self.view.sel()[0]
-        help_word = self.view.substr(sel)
-        help_word = re.sub(" ","_",help_word)
-
-        help_adress = "http://www.stata.com/help.cgi?" + help_word
-        helpfile_path = os.path.join(tempfile.gettempdir(), 'st_stata_help.txt')
-
-        try:
-            a = urllib.request.urlopen(help_adress)
-            source_code = a.read().decode("utf-8")
-            a.close()
-
-            regex_pattern = re.findall("<!-- END HEAD -->\n(.*?)<!-- BEGIN FOOT -->", source_code, re.DOTALL)
-            help_content = re.sub("<h2>|</h2>|<pre>|</pre>|<p>|</p>|<b>|</b>|<a .*?>|</a>|<u>|</u>|<i>|</i>","",regex_pattern[0])
-            help_content = re.sub("&gt;",">",help_content)
-            help_content = re.sub("&lt;",">",help_content)
-
-            with open(helpfile_path, 'w') as f:
-                f.write(help_content)
-
-            self.window = sublime.active_window()
-            self.window.open_file(helpfile_path)
-        
-        except:
-            print("Could not retrieve help file")
-
 class StataLocal(sublime_plugin.TextCommand):
     def run(self,edit):
         sels = self.view.sel()
