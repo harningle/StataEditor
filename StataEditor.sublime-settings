@@ -52,7 +52,7 @@
 	file extensions you wish to be enabled separated by commas. Example:
 	"file_completions": "dta, do, ado" */
 
-	"file_completions": true,
+	"file_completions": "dta, do, py, xlsx, xls, csv, txt",
 
 	/* This setting is the waiting time in seconds from that Stata is launched until
 	the commands are being sent. With zero waiting time, Stata may be launced twice.
