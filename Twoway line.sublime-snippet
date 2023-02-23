@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+#delimit ;
+twoway (line ${1:y1} ${2:x}, lc(black) lp(solid)) ||
+       (line ${3:y3} ${2:x}, lc("0 0 128") lp(dash)) ||
+       (line ${4:y3} ${2:x}, lc("128 0 0") lp(solid))
+  , xtitle("") ytitle("")
+    xlabel(1900(20)2020)
+    legend(label(1 "")
+           label(2 "")
+           label(3 "")
+           rows(3) pos(11) ring(0) region(lw(thin) lc(black)))
+    xsize(16) ysize(9) ;
+#delimit cr
+]]></content>
+	<tabTrigger>twline</tabTrigger>
+	<scope>source.stata</scope>scope>
+	<description>Twoway line</description>description
+</snippet>
