@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+use ${1:filename}, clear
+]]></content>
+	<tabTrigger>use</tabTrigger>
+	<scope>source.stata</scope>scope>
+	<description>Use</description>description
+</snippet>
