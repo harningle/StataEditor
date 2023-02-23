@@ -63,12 +63,12 @@ class FileCompletions(sublime_plugin.EventListener):
         else:
             if settings.get("file_completions") != False:
                 complist = []
-                global_map = {r'^code/': '$code/',
-                              r'^data/': '$data/',
-                              r'^rawdata/': '$rawdata/',
-                              r'^temp/': '$temp/',
-                              r'^figure/': '$fig/',
-                              r'^table/': '$tab/'}
+                global_map = {r'^code/': '\$code/',
+                              r'^data/': '\$data/',
+                              r'^rawdata/': '\$rawdata/',
+                              r'^temp/': '\$temp/',
+                              r'^figure/': '\$fig/',
+                              r'^table/': '\$tab/'}
                 for i in sublime.file_list:
                     for key in global_map:
                         filename = re.sub(key, global_map[key], i)
