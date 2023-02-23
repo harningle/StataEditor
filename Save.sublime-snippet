@@ -2,7 +2,7 @@
 	<content><![CDATA[
 save "${1:filename}.dta", replace
 ]]></content>
-	<tabTrigger>use</tabTrigger>
+	<tabTrigger>sav</tabTrigger>
 	<scope>source.stata</scope>scope>
 	<description>Save</description>description
 </snippet>
