@@ -1,5 +1,6 @@
 <snippet>
 	<content><![CDATA[
+#delimit ;
 graph bar ${1:y1} ${2:y1} ${3:y3}
   , over(decade)
     bar(1, col("255 223 0"))
