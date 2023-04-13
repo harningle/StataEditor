@@ -22,7 +22,7 @@ nav:
     - Overview: index.md
     - Getting started:
         - Installation: installation.md
-        - Configuration: config.m
+        - Configuration: config.md
     - Contributing:
         - contributing/index.md
         - Reporting issues: contributing/reporting_issues.md

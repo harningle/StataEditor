@@ -18,4 +18,4 @@ The recommended way to install is through [Package Control](https://packagecontr
 1. Type `Package Control: Install Package`, and press `Enter`. You may have to wait for a few seconds
 1. Type `StataEditor` and press `Enter` to install
 
-You are good to go!
+[Configure](config.md) StataEditor and you are good to go!
