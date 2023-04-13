@@ -1,0 +1,56 @@
+# Site into.
+site_name: StataEditor
+site_url: https://harningle.github.io/StataEditor/
+site_author: Xuanyi WANG
+site_description: >-
+    Stata plugin for Sublime Text 3/4
+
+# Repos.
+repo_name: harningle/StataEditor
+repo_url: https://github.com/harningle/StataEditor
+
+# Config.
+theme:
+    name: material
+    features:
+        - content.code.copy
+        - navigation.instant
+        - toc.integrate
+
+# Page structure
+nav:
+    - Overview: index.md
+    - Getting started:
+        - Installation: installation.md
+        - Configuration: config.m
+    - Contributing:
+        - contributing/index.md
+        - Reporting issues: contributing/reporting_issues.md
+        - Requesting snippets: contributing/requesting_snippets.md
+        - General questions: contributing/general_question.md
+
+# Extensions (copied from another proj., prob not all needed)
+markdown_extensions:
+    - toc:
+        permalink: true
+    - admonition
+    - footnotes
+    - pymdownx.arithmatex:
+        generic: true
+    - tables
+    - pymdownx.superfences
+    - pymdownx.tabbed:
+        alternate_style: true 
+    - pymdownx.highlight:
+        anchor_linenums: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.superfences
+    - attr_list
+    - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+
+extra_javascript:
+    - https://polyfill.io/v3/polyfill.min.js?features=es6
+    - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js
