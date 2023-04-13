@@ -4,6 +4,8 @@ Based on original work by [Mattias Nordin](http://mattiasnordin.com) and [Sergio
 
 <img src="assets/images/use.gif" width=80% height=80%>
 
+<img src="assets/images/go_to.gif" width=80% height=80%>
+
 <img src="assets/images/copilot.gif" width=80% height=80%>
 
 
@@ -15,7 +17,7 @@ This plugin enables us to run Stata code from Sublime Text 3/4, with the followi
 * Run only (partly) selected code
 * Use "Go To Symbol" to navigate through the do files
 * Code snippets that I found useful
-* And ALL the features coming with Sublime Text and other plugins!
+* And ALL the features coming with Sublime Text and *other* plugins!
 * (, which includes Copilot :rofl:)
 
 

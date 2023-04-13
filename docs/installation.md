@@ -17,5 +17,6 @@ The recommended way to install is through [Package Control](https://packagecontr
 1. Do step 1 again (`Ctrl + Shift + P`)
 1. Type `Package Control: Install Package`, and press `Enter`. You may have to wait for a few seconds
 1. Type `StataEditor` and press `Enter` to install
+1. Do 3-5 again, but this time install `Pywin32`
 
 [Configure](config.md) StataEditor and you are good to go!
