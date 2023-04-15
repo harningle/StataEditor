@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+reghdfe ${1:y} ${2:x}, a(${3:fe}) cl(${4:cluster})
+]]></content>
+	<tabTrigger>outreg</tabTrigger>
+	<scope>source.stata</scope>scope>
+	<description>Outreg2</description>description
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+********************************************************************************
+* {1:Title}                                                                        *
+********************************************************************************
+]]></content>
+	<tabTrigger>hdd</tabTrigger>
+	<scope>source.stata</scope>scope>
+	<description>Subsection</description>description
+</snippet>

@@ -1,9 +1,9 @@
 <snippet>
 	<content><![CDATA[
 #delimit ;
-twoway (line ${1:y1} ${2:x}, lc(black) lp(solid)) ||
-       (line ${3:y2} ${2:x}, lc("0 0 128") lp(dash)) ||
-       (line ${4:y3} ${2:x}, lc("128 0 0") lp(solid))
+twoway (scatter ${1:y1} ${2:x}, mc(black) ms(.)) ||
+       (scatter ${3:y2} ${2:x}, mc("0 0 128") ms(o)) ||
+       (scatter ${4:y3} ${2:x}, mc("128 0 0") ms(x))
   , xtitle("") ytitle("")
     xlabel(1900(20)2020)
     legend(label(1 "")
@@ -14,7 +14,7 @@ twoway (line ${1:y1} ${2:x}, lc(black) lp(solid)) ||
     xsize(16) ysize(9) ;
 #delimit cr
 ]]></content>
-	<tabTrigger>twline</tabTrigger>
+	<tabTrigger>twsc</tabTrigger>
 	<scope>source.stata</scope>scope>
-	<description>Twoway line chart</description>description
+	<description>Twoway scatter plot</description>description
 </snippet>
