@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+*------------------------------------------------------------------------------*
+*-------                                                                -------*
+*-------                         STEP {1:1}. {2:TITLE}                          -------*
+*-------                                                                -------*
+*------------------------------------------------------------------------------*
+]]></content>
+	<tabTrigger>hddd</tabTrigger>
+	<scope>source.stata</scope>scope>
+	<description>Section</description>description
+</snippet>

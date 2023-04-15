@@ -1,15 +1,16 @@
 <snippet>
 	<content><![CDATA[
 #delimit ;
-graph bar ${1:y1} ${2:y1} ${3:y3}
-  , over(decade)
+graph bar ${1:y1} ${2:y2} ${3:y3}
+  , over(4:x)
     bar(1, col("255 223 0"))
     bar(2, col("0 140 69"))
     bar(3, col("45 95 161"))
-    legend(lab(1 "")
-           lab(2 "")
-           lab(3 "")
+    legend(lab(1 "5:legend")
+           lab(2 "6:legend")
+           lab(3 "7:legend")
            rows(3) cols(1) pos(11) ring(0) region(lw(thin) lc(black)))
+    scheme(lean2)
     xsize(16) ysize(9) ;
 #delimit cr
 ]]></content>
