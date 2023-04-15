@@ -2,7 +2,7 @@
 	<content><![CDATA[
 reghdfe ${1:y} ${2:x}, a(${3:fe}) cl(${4:cluster})
 ]]></content>
-	<tabTrigger>outreg</tabTrigger>
+	<tabTrigger>reghdfe</tabTrigger>
 	<scope>source.stata</scope>scope>
-	<description>Outreg2</description>description
+	<description>reghdfe</description>description
 </snippet>

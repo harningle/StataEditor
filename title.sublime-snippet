@@ -3,8 +3,12 @@
 ********************************************************************************
 * ${1:Title}                                                                        *
 ********************************************************************************
+/* Overview:
+   Step 1. ${2:Step}
+   Step 2. ${3:Step}
+*/
 ]]></content>
-	<tabTrigger>hdd</tabTrigger>
+	<tabTrigger>ttl</tabTrigger>
 	<scope>source.stata</scope>scope>
-	<description>Subsection</description>description
+	<description>Title</description>description
 </snippet>
