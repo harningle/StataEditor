@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
-outreg2 using "tab.rtf", replace word dec(3) ///
-    addtext(Fixed Effect, ${1:No}) nonotes
+outreg2 using "${1:tab}.rtf", replace word dec(3) ///
+    addtext(Fixed Effect, ${2:No}) nonotes
 ]]></content>
 	<tabTrigger>outreg</tabTrigger>
 	<scope>source.stata</scope>scope>
