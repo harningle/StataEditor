@@ -95,7 +95,7 @@ class CommandCompletions(sublime_plugin.EventListener):
                     "stfill", "stptime", "streg", "sts", "stset", "stsplit",
                     "stsum", "suest", "sum", "summarize", "sureg", "svy",
                     "svy_estat", "svydescribe", "svygen", "svyset", "svytest",
-                    "syntax", "sysdir", "sysuse",, "table", "tabstat",
+                    "syntax", "sysdir", "sysuse", "table", "tabstat",
                     "tabulate", "teffects", "test", "testnl", "timer", "tobit",
                     "total", "tsfill", "tsline", "tsset", "ttest", "update",
                     "use", "var", "vce", "webuse", "which", "while", "xpose",
