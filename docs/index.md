@@ -1,6 +1,6 @@
 # StataEditor for Sublime Text 3/4
 
-Based on original work by [Mattias Nordin](http://mattiasnordin.com) and [Sergio Correia](http://scorreia.com/)!
+A Sublime Text plugin for Stata. Based on original work by [Mattias Nordin](http://mattiasnordin.com) and [Sergio Correia](http://scorreia.com/)!
 
 <img src="assets/images/use.gif" width=80% height=80%>
 
@@ -14,18 +14,17 @@ Based on original work by [Mattias Nordin](http://mattiasnordin.com) and [Sergio
 This plugin enables us to run Stata code from Sublime Text 3/4, with the following features:
 
 * Syntax highlighting
-* Run only (partly) selected code
-* Use "Go To Symbol" to navigate through the do files
-* Code snippets that I found useful
-* And ALL the features coming with Sublime Text and *other* plugins!
+* Use "GoTo Symbol" to navigate through the do files
+* Code snippets for frequently used commands
+* And ALL the features coming with Sublime Text and other plugins!
 * (, which includes Copilot :rofl:)
 
 
-## Installation
+## Installation and Configuration
 
-Install from this repo. via [Package Control](https://stackoverflow.com/a/44441455).
+Install from this repository via [Package Control](https://stackoverflow.com/a/44441455), and set your Stata installation directory in user settings.
 
 
-## Configuration and Usage
+## Using StataEditor
 
-In progress...
+[Read more](using.md) about the features, keyboard shortcuts and code snippets. A video demo for doing summary statistics, scatter plot, and regression [here](using.md#video-demo).

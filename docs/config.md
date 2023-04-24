@@ -38,13 +38,13 @@ There are a few required and optional arguments to be specified. Open Sublime Te
     "command_completions": true,
 
     /* The working directory in Stata when you establish an initial Stata
-       connection from Sublime Text. "current_path" = where your currently
-       opened do file is located
+       connection from Sublime Text.
+       "current_path" = where your currently opened do file is located
     */
     "default_path": "current_path",
 
     /* Which types of files should be included in filename auto-completion. Note
-       that if your folders containing huge amount of files, this can lead to
+       that if your folders containing an huge amount of files, this can lead to
        memory leaks. If so, simply change the setting to "false".
        false = disable such auto-completion
        To enable file completions, enter the file extensions you wish to be
@@ -85,7 +85,7 @@ There are a few required and optional arguments to be specified. Open Sublime Te
 
 To allow Sublime Text to talk with Stata, we need to use [a Stata Automation object](https://www.stata.com/automation/). You may refer to the [official guide](https://www.stata.com/automation/#install), or in short:
 
-1. ++win+r++, type `cmd`, and then press ++ctrl+shift+enter++ to run Command shell as Administrator. You will see a window with prompt like `C:\WINDOWS\system32>`
+1. Press ++win+r++, type `cmd`, and then press ++ctrl+shift+enter++ to run Command shell as Administrator. You will see a window with prompt like `C:\WINDOWS\system32>`
 1. Go to Stata installation directory using `cd`. E.g., if your Stata in in `C:/Program Files/Stata17`, then type `cd "C:/Program Files/Stata17"` and press ++enter++. The quotes are necessary if the path includes whitespace. After this step, the prompt will change to `C:\Program Files\Stata17>`
 1. Type `./StataMP-64.exe /Register` and press ++enter++ to register. If you use Stata SE or other version then change the executable filename accordingly
 1. Nothing fancy will happen but it's already properly registered
@@ -93,7 +93,18 @@ To allow Sublime Text to talk with Stata, we need to use [a Stata Automation obj
 
 !!! bug "CMD, PowerShell, Terminal?"
 
-    Newer Windows system comes with more than one command-line shells, including terminal or PowerShell. The above steps may or may not work. Whenever possible, use Command shell (cmd).
+    Newer Windows comes with more than one command-line shells, including Command Prompt, Terminal or PowerShell. The above steps may or may not work. Whenever possible, use Command shell (cmd).
 
 
 Close and restart Sublime Text. Now we are ready to [start](using.md)!
+
+
+## Video Tutorial
+
+<video width="80%" height="80%" controls>
+    <source src="../assets/videos/install.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+
+
