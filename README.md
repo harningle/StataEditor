@@ -1,7 +1,9 @@
 Stata Editor for Sublime Text 3/4
 =================================
 
-Original work by [Mattias Nordin](http://mattiasnordin.com) and [Sergio Correia](http://scorreia.com/)
+Original work by [Mattias Nordin](http://mattiasnordin.com) and [Sergio Correia](http://scorreia.com/).
+
+[Demo](https://harningle.github.io/StataEditor/using/#video-demo)
 
 <div style="display:flex;">
     <img src="https://raw.githubusercontent.com/harningle/StataEditor/docs/docs/assets/images/use.gif" style="width:45%; height:45%; margin-right:20px;">
@@ -33,7 +35,7 @@ This package only works on Windows machines. To install:
 1. Install [pywin32](https://github.com/SublimeText/Pywin32), also via Package Control
 1. Change the Stata installation path in user settings
 
-If you are new to Sublime Text, we have a video guide [here](https://github.com/harningle/StataEditor/raw/docs/docs/assets/videos/install.mp4).
+If you are new to Sublime Text, we have a video guide [here](https://harningle.github.io/StataEditor/config/#video-tutorial).
 
 
 Acknowledgments
