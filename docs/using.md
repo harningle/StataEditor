@@ -71,14 +71,10 @@ A code snippet is a reusable code block. Below we've listed the trigger and snip
     ```
 
 
-
-
 ## Video demo
 
 Below is a video demo for summary statistics, scatter plot, and regression.
 
-<video width="80%" height="80%" controls>
-    <source src="../assets/videos/demo.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-
+<div style="position: relative; width: 100%; padding-bottom: 56.25%;">
+    <iframe src="https://harning-my.sharepoint.com/personal/wangxy_harning_onmicrosoft_com/_layouts/15/embed.aspx?UniqueId=2537d2fc-e833-42dc-842a-58a7087f5b7b&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=OneUpFileViewer&referrerScenario=EmbedDialog.Create" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" scrolling="no" allowfullscreen title="Demo"></iframe>
+</div>

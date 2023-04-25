@@ -1,4 +1,4 @@
-The recommended way to install StataEditor is via [Package Control](https://packagecontrol.io/).
+The recommended way to install StataEditor is via [Package Control](https://packagecontrol.io/). A video guide is also available [here](config.md#video-tutorial).
 
 
 ## Install Sublime Text 3/4
