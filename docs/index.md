@@ -7,24 +7,24 @@
 
 <p align="center">
     <a href="https://github.com/harningle/StataEditor/graphs/traffic" alt="Views">
-        <img src="https://github.com/harningle/StataEditor/blob/gh-pages/assets/images/views.svg">
+        <img src="https://github.com/harningle/StataEditor/raw/gh-pages/assets/images/views.svg">
     </a>
     <a href="https://github.com/harningle/StataEditor/graphs/traffic" alt="Clones">
-        <img src="https://github.com/harningle/StataEditor/blob/gh-pages/assets/images/clones.svg">
+        <img src="https://github.com/harningle/StataEditor/raw/gh-pages/assets/images/clones.svg">
     </a>
     <a href="https://github.com/harningle/StataEditor/graphs/commit-activity" alt="Last commit">
-        <img src="https://github.com/harningle/StataEditor/blob/gh-pages/assets/images/last_commit.svg">
+        <img src="https://github.com/harningle/StataEditor/raw/gh-pages/assets/images/last_commit.svg">
     </a>
 </p>
 
 A Sublime Text plugin for Stata. Based on original work by [Mattias Nordin](http://mattiasnordin.com) and [Sergio Correia](http://scorreia.com/)!
 
-<img src="assets/images/use.gif" width=80% height=80%>
 
-<img src="assets/images/go_to.gif" width=80% height=80%>
-
-<img src="assets/images/copilot.gif" width=80% height=80%>
-
+<div>
+    <img src="assets/images/use.gif" width=49.5% height=49.5%>
+    <img src="assets/images/go_to.gif" width=49.5% height=49.5%>
+    <img src="assets/images/copilot.gif" width=99% height=99%>
+</div>
 
 ## Features
 
@@ -39,7 +39,7 @@ This plugin enables us to run Stata code from Sublime Text 3/4, with the followi
 
 ## Installation and Configuration
 
-Install from this repository via [Package Control](https://stackoverflow.com/a/44441455), and set your Stata installation directory in user settings.
+Install from this repository via Package Control, and set your Stata installation directory in user settings. Step-by-step guide [here](installation.md).
 
 
 ## Using StataEditor

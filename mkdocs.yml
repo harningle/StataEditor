@@ -24,11 +24,7 @@ nav:
         - Installation: installation.md
         - Configuration: config.md
         - Using StataEditor: using.md
-    - Contributing:
-        - contributing/index.md
-        - Reporting issues: contributing/reporting_issues.md
-        - Requesting snippets: contributing/requesting_snippets.md
-        - General questions: contributing/general_question.md
+    - Contributing: contributing.md
 
 # Extensions (copied from another proj., prob not all needed)
 markdown_extensions:
@@ -49,6 +45,7 @@ markdown_extensions:
     - pymdownx.snippets
     - pymdownx.superfences
     - attr_list
+    - abbr
     - pymdownx.emoji:
         emoji_index: !!python/name:materialx.emoji.twemoji
         emoji_generator: !!python/name:materialx.emoji.to_svg
