@@ -1,13 +1,25 @@
 Stata Editor for Sublime Text 3/4
 =================================
 
-Original work by [Mattias Nordin](http://mattiasnordin.com) and [Sergio Correia](http://scorreia.com/).
-
 <div align="center">
     <a href="https://harningle.github.io/StataEditor/using/#video-demo"><strong>:desktop_computer: Demo</strong></a> | 
     <a href="https://harningle.github.io/StataEditor/config/#video-tutorial"><strong>:eyes: Installation Guide</strong></a>
     <br></br>
 </div>
+
+<p align="center">
+    <a href="https://github.com/harningle/StataEditor/graphs/traffic" alt="Views">
+        <img src="https://github.com/harningle/StataEditor/blob/gh-pages/assets/images/views.svg">
+    </a>
+    <a href="https://github.com/harningle/StataEditor/graphs/traffic" alt="Clones">
+        <img src="https://github.com/harningle/StataEditor/blob/gh-pages/assets/images/clones.svg">
+    </a>
+    <a href="https://github.com/harningle/StataEditor/graphs/commit-activity" alt="Last commit">
+        <img src="https://github.com/harningle/StataEditor/blob/gh-pages/assets/images/last_commit.svg">
+    </a>
+</p>
+
+Original work by [Mattias Nordin](http://mattiasnordin.com) and [Sergio Correia](http://scorreia.com/).
 
 <div width="100%">
   <img src="https://raw.githubusercontent.com/harningle/StataEditor/docs/docs/assets/images/use.gif" width="49%" valign="top">
