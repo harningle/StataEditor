@@ -29,5 +29,7 @@ jobs:
 
             - name: build docs
               run: |
-                pip install mkdocs-material 
+                pip install mkdocs-material
+                npm install -g badge-maker
+                TOKEN=${{ secrets.INSIGHTS_TOKEN }} python get_traffic.py
                 mkdocs gh-deploy --force
