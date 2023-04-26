@@ -82,5 +82,5 @@ if __name__ == '__main__':
     os.system(f'badge views {traffic["views"]} :brightgreen > {working_dir}/views.svg')
     os.system(f'badge clones {traffic["clones"]} :brightgreen > {working_dir}/clones.svg')
     os.system(
-        f'''badge "last commit" "{traffic['clones']}" :blue > {working_dir}/last_commit.svg'''
+        f'''badge "last commit" "{traffic['last_commit']}" :blue > {working_dir}/last_commit.svg'''
     )
