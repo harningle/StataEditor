@@ -1,5 +1,24 @@
 # StataEditor for Sublime Text 3/4
 
+<div align="center">
+    <a href="https://harningle.github.io/StataEditor/using/#video-demo"><strong>:desktop_computer: Demo</strong></a> | 
+    <a href="https://harningle.github.io/StataEditor/config/#video-tutorial"><strong>:eyes: Installation Guide</strong></a>
+    <br></br>
+</div>
+
+<p align="center">
+    <a href="https://github.com/harningle/StataEditor/graphs/traffic" alt="Views">
+        <img src="assets/images/views.svg">
+    </a>
+    <a href="https://github.com/harningle/StataEditor/graphs/traffic" alt="Clones">
+        <img src="assets/images/clones.svg">
+    </a>
+    <a href="https://github.com/harningle/StataEditor/graphs/commit-activity" alt="Last commit">
+        <img src="assets/images/last_commit.svg">
+    </a>
+</p>
+
+
 A Sublime Text plugin for Stata. Based on original work by [Mattias Nordin](http://mattiasnordin.com) and [Sergio Correia](http://scorreia.com/)!
 
 <img src="assets/images/use.gif" width=80% height=80%>
