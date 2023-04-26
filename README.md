@@ -3,11 +3,16 @@ Stata Editor for Sublime Text 3/4
 
 Original work by [Mattias Nordin](http://mattiasnordin.com) and [Sergio Correia](http://scorreia.com/).
 
-[Demo](https://harningle.github.io/StataEditor/using/#video-demo)
+<div align="center">
+    <a href="https://harningle.github.io/StataEditor/using/#video-demo"><strong>:desktop_computer: Demo</strong></a> | 
+    <a href="https://harningle.github.io/StataEditor/config/#video-tutorial"><strong>:eyes: Installation Guide</strong></a>
+    <br></br>
+</div>
 
-<div style="display:flex;">
-    <img src="https://raw.githubusercontent.com/harningle/StataEditor/docs/docs/assets/images/use.gif" style="width:45%; height:45%; margin-right:20px;">
-    <img src="https://raw.githubusercontent.com/harningle/StataEditor/docs/docs/assets/images/go_to.gif" style="width:45%; height:45%; margin-left:20px;">
+<div width="100%">
+  <img src="https://raw.githubusercontent.com/harningle/StataEditor/docs/docs/assets/images/use.gif" width="49%" valign="top">
+  <img src="https://raw.githubusercontent.com/harningle/StataEditor/docs/docs/assets/images/go_to.gif" width="49%" valign="top">
+  <div style="clear:both;"></div>
 </div>
 
 
