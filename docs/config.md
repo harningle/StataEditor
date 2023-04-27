@@ -1,4 +1,4 @@
-There are a few more steps to get the plugin work.
+There are a few more steps to get the plugin work. You can find a [video guide](#video-tutorial) from installation to configuration at the bottom of this page.
 
 
 ## Configure StataEditor
@@ -99,8 +99,19 @@ To allow Sublime Text to talk with Stata, we need to use [a Stata Automation obj
 Close and restart Sublime Text. Now we are ready to [start](using.md)!
 
 
+## Copilot (optional)
+
+[GitHub Copilot](https://github.com/features/copilot/) uses [Codex](https://openai.com/blog/openai-codex), which is a descendant of GPT-3 by OpenAI, the company that created ChatGPT, to suggest code in near real-time. Basically, you write the comment or part of the code, and Copilot auto-complete the rest for you. It's a great tool to boost productivity! There is no official support of Copilot for Sublime Text, but community members have made it possible. One such tool is [LSP-copilot](https://packagecontrol.io/packages/LSP-copilot). You can find the installation and setup instruction on [its repository](https://github.com/TerminalFi/LSP-copilot).
+
+!!!warning "Copilot may not work well with Stata"
+
+    Personally I discourage using Copilot for Stata. The reason is simple: Copilot does not understand Stata syntax well, partly due to a lack of Stata code in its training data. (Just think about how many CS papers publish their code on GitHub, and how many econ papers have their replication files available online...) As a result, it may suggest wrong code very often. Below is an example where Copilot is wrong (the coefficients are completely [hallucination](https://dl.acm.org/doi/10.1145/3571730)).
+    
+    <img src="../assets/images/copilot_sophisticated.gif" width=99% height=99%>
+
+
 ## Video Tutorial
 
 <div style="position: relative; width: 100%; padding-bottom: 56.25%;">
-    <iframe src="https://harning-my.sharepoint.com/personal/wangxy_harning_onmicrosoft_com/_layouts/15/embed.aspx?UniqueId=24dc7a30-52dd-47a4-a28d-279d564da7d6&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=OneUpFileViewer&referrerScenario=EmbedDialog.Create" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" scrolling="no" allowfullscreen title="Install"></iframe>
+    <iframe src="https://onedrive.live.com/embed?cid=56B137D063F1703D&resid=56B137D063F1703D%211182&authkey=ABeldzZWQIj9th0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" scrolling="no" allowfullscreen title="Install"></iframe>
 </div>

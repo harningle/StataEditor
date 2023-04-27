@@ -1,4 +1,4 @@
-Below are the keyboard shortcuts and code snippets that come with this plugin. 
+Below are the keyboard shortcuts and code snippets that come with this plugin. At the bottom there is a video [demo](#video-demo).
 
 
 ## Keyboard shortcuts
@@ -135,5 +135,5 @@ The package comes with variable, command, function, and filename auto-completion
 Below is a video demo for summary statistics, scatter plot, and regression.
 
 <div style="position: relative; width: 100%; padding-bottom: 56.25%;">
-    <iframe src="https://harning-my.sharepoint.com/personal/wangxy_harning_onmicrosoft_com/_layouts/15/embed.aspx?UniqueId=2537d2fc-e833-42dc-842a-58a7087f5b7b&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=OneUpFileViewer&referrerScenario=EmbedDialog.Create" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" scrolling="no" allowfullscreen title="Demo"></iframe>
+    <iframe src="https://onedrive.live.com/embed?cid=56B137D063F1703D&resid=56B137D063F1703D%211183&authkey=ALEU-_oZljeWC9w" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" scrolling="no" allowfullscreen title="Demo"></iframe>
 </div>
