@@ -3,7 +3,8 @@ Stata Editor for Sublime Text 3/4
 
 <div align="center">
     <a href="https://harningle.github.io/StataEditor/using/#video-demo"><strong>:desktop_computer: Demo</strong></a> | 
-    <a href="https://harningle.github.io/StataEditor/config/#video-tutorial"><strong>:eyes: Installation Guide</strong></a>
+    <a href="https://harningle.github.io/StataEditor/config/#video-tutorial"><strong>:eyes: Installation Guide</strong></a> | 
+    <a href="https://harningle.github.io/StataEditor"><strong>:book: README</strong></a>
     <br></br>
 </div>
 
@@ -37,7 +38,7 @@ This package enables us to run Stata code from Sublime Text 3/4, with the follow
 * Code snippets for frequently used commands
 * "GoTo Symbol" to navigate through the do files
 * And ALL the features coming with Sublime Text and other packages!
-* (, which includes Copilot :rofl:)
+* (, which includes [Copilot](https://github.com/TerminalFi/LSP-copilot) :rofl:)
 
 
 Installation and Setup
@@ -57,6 +58,7 @@ If you are new to Sublime Text, we have a video guide [here](https://harningle.g
 
 Acknowledgments
 ---------------
+
 The package was originally developed by [Mattias Nordin](http://mattiasnordin.com) and [Sergio Correia](http://scorreia.com/). Thanks to [Adrian Adermon](https://www.adrianadermon.com/) and Daniel Forchheimer for helpful suggestions.
 
 
