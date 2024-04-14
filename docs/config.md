@@ -85,7 +85,7 @@ There are a few required and optional arguments to be specified. Open Sublime Te
 
 To allow Sublime Text to talk with Stata, we need to use [a Stata Automation object](https://www.stata.com/automation/). You may refer to the [official guide](https://www.stata.com/automation/#install), or in short:
 
-1. Press ++win+r++, type `cmd`, and then press ++ctrl+shift+enter++ to run Command shell as Administrator. You will see a window with prompt like `C:\WINDOWS\system32>`
+1. Press ++win+r++, type `cmd`, and then press ++ctrl+shift+enter++ to run Command shell **as Administrator**. You will see a window with prompt like `C:\WINDOWS\system32>`
 1. Go to Stata installation directory using `cd`. E.g., if your Stata in in `C:/Program Files/Stata17`, then type `cd "C:/Program Files/Stata17"` and press ++enter++. The quotes are necessary if the path includes whitespace. After this step, the prompt will change to `C:\Program Files\Stata17>`
 1. Type `./StataMP-64.exe /Register` and press ++enter++ to register. If you use Stata SE or other version then change the executable filename accordingly
 1. Nothing fancy will happen but it's already properly registered
@@ -94,6 +94,11 @@ To allow Sublime Text to talk with Stata, we need to use [a Stata Automation obj
 !!! bug "CMD, PowerShell, Terminal?"
 
     Newer Windows comes with more than one command-line shells, including Command Prompt, Terminal or PowerShell. The above steps may or may not work. Whenever possible, use Command shell (cmd).
+
+
+!!! warning "Need admin rights"
+
+    We must run `./StataMP-64.exe /Register` as admin. If you see errors like `AttributeError: 'module' object has no attribute 'stata'` in Sublime Text console, please re-register Stata library as admin. See [#1](https://github.com/harningle/StataEditor/issues/1) for more details.
 
 
 Close and restart Sublime Text. Now we are ready to [start](using.md)!
