@@ -52,18 +52,21 @@ def get_traffic(repo: str) -> dict:
         'Authorization': f'Bearer {TOKEN}',
     }
     resp = requests.get(url, headers=headers)
+    resp.raise_for_status()
     data = resp.json()
     n_views = data['count']
 
     # Get the #. of clones
     url = f'https://api.github.com/repos/{repo}/traffic/clones'
     resp = requests.get(url, headers=headers)
+    resp.raise_for_status()
     data = resp.json()
     n_clones = data['count']
 
     # Get the last commit date
     url = f'https://api.github.com/repos/{repo}/commits'
     resp = requests.get(url, headers=headers)
+    resp.raise_for_status()
     data = resp.json()
     last_commit = data[0]['commit']['author']['date']
     return {'views': naturalise(n_views),
