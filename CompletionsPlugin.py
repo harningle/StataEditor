@@ -1,7 +1,4 @@
 import sublime, sublime_plugin
-import Pywin32.setup
-import win32com.client
-import win32api
 import os
 import re
 
@@ -117,12 +114,12 @@ class FileCompletions(sublime_plugin.EventListener):
         else:
             if settings.get("file_completions") != False:
                 complist = []
-                global_map = {r'^\d*_*[cC]ode/': '\$code/',
-                              r'^\d*_*[dD]ata/': '\$data/',
-                              r'^\d*_*[rR]awdata/': '\$rawdata/',
-                              r'^\d*_*[tT]emp/': '\$temp/',
-                              r'^\d*_*[fF]igure/': '\$fig/',
-                              r'^\d*_*[tT]able/': '\$tab/'}
+                global_map = {r'^\d*_*[cC]ode/': r'\$code/',
+                              r'^\d*_*[dD]ata/': r'\$data/',
+                              r'^\d*_*[rR]awdata/': r'\$rawdata/',
+                              r'^\d*_*[tT]emp/': r'\$temp/',
+                              r'^\d*_*[fF]igure/': r'\$fig/',
+                              r'^\d*_*[tT]able/': r'\$tab/'}
                 for i in sublime.file_list:
                     for key in global_map:
                         filename = re.sub(key, global_map[key], i)

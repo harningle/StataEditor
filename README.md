@@ -50,7 +50,7 @@ This package only works on Windows machines. To install:
 1. Install [Package Control](https://stackoverflow.com/a/44441455)
 1. Add this repository to Package Control
 1. Install StataEditor via Package Control
-1. Install [pywin32](https://github.com/SublimeText/Pywin32), also via Package Control
+1. Sublime Text 3 *only*: install [Pywin32](https://github.com/SublimeText/Pywin32), also via Package Control. On Sublime Text 4, Package Control installs the `pywin32` library automatically, sso we don't need to do anything. Restart Sublime Text once after installing StataEditor
 1. Change the Stata installation path in user settings
 
 If you are new to Sublime Text, we have a video guide [here](https://harningle.github.io/StataEditor/config/#video-tutorial).
