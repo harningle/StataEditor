@@ -46,7 +46,6 @@ def sublime_url(build):
 
 
 def download(url, dest):
-    print(f'Downloading {url}')
     with urllib.request.urlopen(url) as response, open(dest, 'wb') as f:
         shutil.copyfileobj(response, f)
 
@@ -54,6 +53,8 @@ def download(url, dest):
 def cached_download(url, name):
     path = WORK / 'cache' / name
     if not path.exists():
+        # Only on the first run, as it takes a while
+        print(f'Downloading {name}', flush=True)
         path.parent.mkdir(parents=True, exist_ok=True)
         download(url, path.with_suffix('.part'))
         path.with_suffix('.part').rename(path)
