@@ -32,8 +32,6 @@ markdown_extensions:
         permalink: true
     - admonition
     - footnotes
-    - pymdownx.arithmatex:
-        generic: true
     - tables
     - pymdownx.superfences
     - pymdownx.tabbed:
@@ -43,13 +41,8 @@ markdown_extensions:
     - pymdownx.inlinehilite
     - pymdownx.keys
     - pymdownx.snippets
-    - pymdownx.superfences
     - attr_list
     - abbr
     - pymdownx.emoji:
-        emoji_index: !!python/name:materialx.emoji.twemoji
-        emoji_generator: !!python/name:materialx.emoji.to_svg
-
-extra_javascript:
-    - https://polyfill.io/v3/polyfill.min.js?features=es6
-    - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js
+        emoji_index: !!python/name:material.extensions.emoji.twemoji
+        emoji_generator: !!python/name:material.extensions.emoji.to_svg

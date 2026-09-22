@@ -1,4 +1,4 @@
-The recommended way to install StataEditor is via [Package Control](https://packagecontrol.io/). A video guide is also available [here](config.md#video-tutorial).
+The recommended way to install StataEditor is via [Package Control](https://packagecontrol.io/). A video guide for Sublime Text 3 is also available [here](config.md#video-tutorial).
 
 
 ## Install Sublime Text 3/4
@@ -21,7 +21,7 @@ First of all, we need Sublime Text installed (and Stata of course). Sublime Text
 
 !!! info "Stata version"
 
-    I've personally tested Stata 15, 16, and 17. Earlier versions could be supported but there is no guarantee.
+    I've tested Stata 15, 16, 17, and 18. Earlier or later versions may be supported but there is no guarantee. I left Economics for a while so I don't have any licenses for newer Stata versions unfortunately.
 
 
 ## Install Package Control
@@ -40,6 +40,6 @@ Open Sublime Text, and to [install Package Control](https://packagecontrol.io/in
 1. Do step 1 again (++ctrl+shift+p++)
 1. Type `Package Control: Install Package`, and press ++enter++. You may have to wait for a few seconds
 1. Type `StataEditor` and press ++enter++ to install
-1. Do 3-5 again, but this time install `Pywin32`
+1. *Only* if you are using Sublime Text 3: do 3-5 again, but this time install `Pywin32`
 
 [Configure](config.md) StataEditor and you are good to go!
