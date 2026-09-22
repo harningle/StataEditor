@@ -36,7 +36,7 @@ PACKAGE_CONTROL_DONE = ('All specified packages up-to-date', 'Skipping automatic
 # The legacy "Pywin32" package, which ST3 users install by hand
 PYWIN32_URL = 'https://github.com/SublimeText/Pywin32/archive/refs/heads/master.zip'
 AUTO_VARIABLES = ['make', 'price', 'mpg', 'rep78', 'headroom', 'trunk', 'weight', 'length',
-				  'turn', 'displacement', 'gear_ratio', 'foreign']
+                  'turn', 'displacement', 'gear_ratio', 'foreign']
 
 
 def sublime_url(build):
