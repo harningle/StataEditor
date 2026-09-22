@@ -1,0 +1,21 @@
+name: test
+on:
+    workflow_dispatch:
+    push:
+    pull_request:
+permissions:
+    contents: read
+jobs:
+    test:
+        runs-on: windows-latest
+        steps:
+            - name: checkout
+              uses: actions/checkout@v7
+
+            - name: Install Python
+              uses: actions/setup-python@v7
+              with:
+                python-version: 3.x
+
+            - name: run tests
+              run: python tests/run_tests.py

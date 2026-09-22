@@ -1,6 +1,17 @@
 import sublime, sublime_plugin
 import os
-import Pywin32.setup
+import site
+import sys
+if sys.version_info < (3, 8):
+    # ST3: pywin32 comes from Pywin32
+    import Pywin32.setup
+else:
+    # ST4: pywin32 is a Package Control library, whose pywin32.pth is not
+    # processed by Sublime Text, so do it here
+    for path in sys.path:
+        if os.path.isfile(os.path.join(path, 'pywin32.pth')):
+            site.addsitedir(path)
+            break
 import win32com.client
 import win32api
 import tempfile
