@@ -13,17 +13,17 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: checkout docs
-              uses: actions/checkout@v3
+              uses: actions/checkout@v7
               with:
                 ref: docs
 
             - name: Install Python
-              uses: actions/setup-python@v4
+              uses: actions/setup-python@v7
               with:
                 python-version: 3.x
 
             - name: cache dependencies
-              uses: actions/cache@v4
+              uses: actions/cache@v6
               with:
                 key: ${{ github.ref }}
                 path: .cache
